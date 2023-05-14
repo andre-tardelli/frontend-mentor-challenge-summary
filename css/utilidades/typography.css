@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'HankenGrotesk-VariableFont_wght';
+    src: url("/assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+.font-s {
+    font-weight: 500;
+}
+
+.font-m {
+    font-weight: 700;
+}
+
+.font-b {
+    font-weight: 800;
+}

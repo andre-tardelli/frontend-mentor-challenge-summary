@@ -1,0 +1,45 @@
+:root {
+    /* Color-primary-boxs */
+    --color-p0: #ff5757;
+    --color-p1: #ffb01f;
+    --color-p2: #00bd91;
+    --color-p3: #1125d4;
+
+    /* Color-Neutral */
+    --color-n0: #ebf1ff;
+    --color-n1: #c8c7ff;
+    --color-n2: #303b5a;
+
+    /* Color-Gradients-box */
+    --color-g0: #7857ff;
+    --color-g1: #2e2be9;
+
+    --color-c0: hsla(256, 72%, 46%, 1);
+    --color-c1: hsla(241, 72%, 46%, 0);
+}
+
+/* Class for text */
+.color-p0 {
+    color: var(--color-p0);
+}
+.color-p1 {
+    color: var(--color-p1);
+}
+.color-p2 {
+    color: var(--color-p2);
+}
+.color-p3 {
+    color: var(--color-p3);
+}
+.color-n0 {
+    color: var(--color-n0);
+}
+.color-n1 {
+    color: var(--color-n1);
+}
+.color-n2 {
+    color: var(--color-n2);
+}
+
+
+

@@ -1,7 +1,7 @@
-@font-face {
-    font-family: 'HankenGrotesk-VariableFont_wght';
-    src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
-}
+@import "./utilidades/color.css";
+@import "./utilidades/typography.css";
+
+
 
 body 
 h1,
@@ -21,7 +21,7 @@ a {
 .attribution a { color: hsl(228, 45%, 44%); }
 
 .summary {
-    box-shadow: 0px 0px 60px 0px #edf1fd;
+    box-shadow: 0px 0px 60px 0px #edf1ff;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
@@ -56,7 +56,7 @@ a {
 .reaction {
     background-color: #fff6f5;
     position: relative;
-    color: #ff5555;
+    color: #ff5757;
 }
 
 .reaction span {
@@ -169,7 +169,7 @@ a {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 16px;
-    color: #d9dcf5;
+    color: #c8c7ff;
 }
 
 .result-bg {
@@ -185,7 +185,7 @@ a {
 .result-valor span {
     font-size: 0.8rem;
     font-weight: 700;
-    color: #b8ade7;
+    color: #c8c7ff;
     margin-top: -5px;
     display: block;
 }
@@ -204,7 +204,7 @@ a {
 
 .result-text-content {
     font-size: 0.85rem;
-    color: #cfdbff;
+    color: #c8c7ff;
 }
 
 .botao {
