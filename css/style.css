@@ -1,8 +1,6 @@
 @import "./utilidades/color.css";
 @import "./utilidades/typography.css";
 
-
-
 body 
 h1,
 h2,
@@ -20,13 +18,26 @@ a {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 .summary {
-    box-shadow: 0px 0px 60px 0px #edf1ff;
+    box-shadow: 0px 0px 60px 0px var(--color-n0);
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     margin-bottom: 48px;
     width: 500px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+@media (max-width: 370px) {
+    .summary {
+        grid-template-columns: 1fr;
+    }
 }
 
 .box-summary {
@@ -35,12 +46,12 @@ a {
 
 .box-summary h1 {
     font-size: 1rem;
-    font-weight: 600;
     margin-bottom: 16px;
 }
 
 .box-summary-lista {
     list-style: none;
+    margin-bottom: 30px;
 }
 
 .box-summary-content li {
@@ -48,23 +59,13 @@ a {
     padding: 10px 15px 10px 35px;
     border-radius: 8px;
     font-size: 0.85rem;
-    font-weight: 600;
     display: flex;
     justify-content: space-between;
 }
 
 .reaction {
-    background-color: #fff6f5;
+    background-color: var(--color-pt0);
     position: relative;
-    color: #ff5757;
-}
-
-.reaction span {
-    color: #a8a8a8;
-}
-
-.reaction strong {
-    color: #353535;
 }
 
 .reaction::before {
@@ -80,17 +81,8 @@ a {
 }
 
 .memory {
-    background-color: #fffbf2;
+    background-color: var(--color-pt1);
     position: relative;
-    color: #FFB21E;
-}
-
-.memory span {
-    color: #a8a8a8;
-}
-
-.memory strong {
-    color: #353535;
 }
 
 .memory::before {
@@ -106,17 +98,8 @@ a {
 }
 
 .verbal {
-    background-color: #f2fbfa;
+    background-color: var(--color-pt2);
     position: relative;
-    color: #00BB8F;
-}
-
-.verbal span {
-    color: #a8a8a8;
-}
-
-.verbal strong {
-    color: #353535;
 }
 
 .verbal::before {
@@ -133,16 +116,7 @@ a {
 
 .visual {
     position: relative;
-    background-color: #f2f2fb;
-    color: #1125D6;
-}
-
-.visual span {
-    color: #a8a8a8;
-}
-
-.visual strong {
-    color: #353535;
+    background-color: var(--color-pt3);
 }
 
 .visual::before {
@@ -158,22 +132,19 @@ a {
 }
 
 .summary-result {
-    background: linear-gradient(#535cd8d7, #3b0fff);
+    background: linear-gradient(var(--color-g0), var(--color-g1));
     border-radius: 20px;
     text-align: center;
     padding: 28px;
-    color: #ffffff;
 }
 
 .summary-result h1{
     font-size: 1rem;
-    font-weight: 600;
     margin-bottom: 16px;
-    color: #c8c7ff;
 }
 
-.result-bg {
-    background: linear-gradient(#5134d3, #4400ff00);
+.result-circle {
+    background: linear-gradient(var(--color-c0), var(--color-c1));
     height: 90px;
     width: 90px;
     margin: 0 auto;
@@ -184,29 +155,32 @@ a {
 
 .result-valor span {
     font-size: 0.8rem;
-    font-weight: 700;
-    color: #c8c7ff;
     margin-top: -5px;
     display: block;
 }
 
 .result-valor p {
     font-size: 3rem;
-    font-weight: 800;
     margin-top: 5px;
 }
 
 .result-text {
     font-size: 1.4rem;
-    font-weight: 600;
     margin-bottom: 12px;
 }
 
 .result-text-content {
     font-size: 0.85rem;
-    color: #c8c7ff;
 }
 
 .botao {
-    background: linear-gradient(#535cd8d7, #3b0fff);
+    background: linear-gradient(var(--color-g0), var(--color-g1));
+    display: grid;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.botao:hover {
+    background: var(--color-n2);
 }
