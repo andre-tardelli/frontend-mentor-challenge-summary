@@ -53,7 +53,7 @@ Os usuários devem ser capazes de:
 
 - Display Flex: Explorado como ferramenta para alinhar e posicionar elementos. Ela foi usada, por exemplo, para centralizar o projeto ao centro do Body.
 
-- Display Grid: Utilazado no projeto para a criação do layouts em grade e organização dos elementos em colunas e linhas, como usado na class="summary".
+- Display Grid: Utilizado no projeto para a criação do layouts em grade e organização dos elementos em colunas e linhas, como usado na class="summary".
 
 
 ### O que eu aprendi
