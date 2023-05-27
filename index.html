@@ -1,49 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  
-<div>
-  <div class="summary">
-    <div class="summary-result">
-      <h1 class="color-n1 font-m">Your Result</h1>
-      <div class="result-circle">
-        <div class="result-valor">
-          <p class="color-n0 font-b">76</p><span class="color-n1 font-m">of 100</span>
+  <main>
+    <div class="summary">
+      <div class="summary-result">
+        <h1 class="color-n1 font-m">Your Result</h1>
+        <div class="result-circle">
+          <div class="result-valor">
+            <p class="color-n0 font-b">76</p><span class="color-n1 font-m">of 100</span>
+          </div>
+        </div>
+        <h3 class="result-text font-b color-n0">Great</h3>
+        <p class="result-text-content color-n1 font-s">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+      <div class="box-summary">
+        <div class="box-summary-content">
+          <h1 class="color-n2">Summary</h1>
+          <ul class="box-summary-lista font-m">
+            <li class="reaction category color-p0">Reaction <span class="color-n2"> 80 <span class="color-nt2">/100</span></span></li>
+            <li class="memory category color-p1">Memory <span class="color-n2">92 <span class="color-nt2"> /100</span></span></li>
+            <li class="verbal category color-p2">Verbal <span class="color-n2">61 <span class="color-nt2">/100</span></span></li>
+            <li class="visual category color-p3">Visual <span class="color-n2">72 <span class="color-nt2">/100</span></span></li>
+          </ul>
+          <a class="botao color-n0 font-m" href="">Continue</a>
         </div>
       </div>
-      <h3 class="result-text font-b color-n0">Great</h3>
-      <p class="result-text-content color-n1 font-s">You scored higher than 65% of the people who have taken these tests.</p>
     </div>
-  
-    <div class="box-summary">
-      <h1 class="color-n2">Summary</h1>
-      <div class="box-summary-content">
-        <ul class="box-summary-lista font-m">
-          <li class="reaction color-p0">Reaction <span class="color-n2"> 80 <span class="color-nt2">/100</span></span></li>
-          <li class="memory color-p1">Memory <span class="color-n2">92 <span class="color-nt2"> /100</span></span></li>
-          <li class="verbal color-p2">Verbal <span class="color-n2">61 <span class="color-nt2">/100</span></span></li>
-          <li class="visual color-p3">Visual <span class="color-n2">72 <span class="color-nt2">/100</span></span></li>
-        </ul>
-        <a class="botao color-n0 font-m" href="">Continue</a>
-      </div >
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">André Tardelli</a>.
     </div>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">André Tardelli</a>.
-  </div>
-</div>
-  
+  </main>
 </body>
 </html>

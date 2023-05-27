@@ -15,47 +15,38 @@ a {
     text-decoration: none;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
+
 .summary {
     box-shadow: 0px 0px 60px 0px var(--color-n0);
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    margin-bottom: 48px;
     max-width: 500px;
-    border-radius: 30px 0px 0px 30px;
-}
-
-@media (max-width: 460px) {
-    .summary {
-        height: 100vh;
-        grid-template-columns: 1fr;
-    }
-    
-    .summary-result h1 {
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 250px) {
-    .summary {
-        min-width: 210px;
-        margin-bottom: 30px;        
-    }
-
-
+    border-radius: 20px;
 }
 
 .box-summary {
+    background-color: var(--color-n);
+    border-radius: 20px;
+}
+
+.box-summary-content {
     padding: 28px;
+}
+
+.box-summary-lista li {
+    margin-bottom: 12px;
+    padding: 10px 15px 10px 35px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .box-summary h1 {
@@ -68,18 +59,12 @@ body {
     margin-bottom: 30px;
 }
 
-.box-summary-content li {
-    margin-bottom: 12px;
-    padding: 10px 15px 10px 35px;
-    border-radius: 8px;
-    font-size: 0.85rem;
-    display: flex;
-    justify-content: space-between;
+.category {
+    position: relative;
 }
 
 .reaction {
     background-color: var(--color-pt0);
-    position: relative;
 }
 
 .reaction::before {
@@ -96,7 +81,6 @@ body {
 
 .memory {
     background-color: var(--color-pt1);
-    position: relative;
 }
 
 .memory::before {
@@ -113,7 +97,6 @@ body {
 
 .verbal {
     background-color: var(--color-pt2);
-    position: relative;
 }
 
 .verbal::before {
@@ -129,7 +112,6 @@ body {
 }
 
 .visual {
-    position: relative;
     background-color: var(--color-pt3);
 }
 
@@ -197,4 +179,50 @@ body {
 
 .botao:hover {
     background: var(--color-n2);
+    }
+
+.attribution { 
+    font-size: 0.68rem; text-align: center; 
+    padding: 40px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);     
+}
+
+@media (max-width: 460px) {
+    
+    body {
+        display: initial;
+        margin: 0px;
+    }
+    
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-result {
+        border-radius: 0px 0px 20px 20px;
+        padding: 28px 40px;
+    }
+    
+    .attribution {
+        font-size: 0.58rem;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 310px) {
+
+    .summary-result {
+        padding: 28px;
+    }
+
+    .box-summary-content {
+    padding: 18px;
+    }
+
+    .box-summary-lista li {
+        font-size: 0.85rem;
+    }
 }
